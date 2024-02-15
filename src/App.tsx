@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      <h1>Unity WebGL</h1>
       <Unity unityProvider={unityProvider} />
     </>
   );
