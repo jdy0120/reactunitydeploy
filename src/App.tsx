@@ -3,16 +3,40 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "Build/Build.loader.js",
-    dataUrl: "Build/Build.data.unityweb",
-    frameworkUrl: "Build/Build.framework.js.unityweb",
-    codeUrl: "Build/Build.wasm.unityweb",
+    loaderUrl: "Build/20240215.loader.js",
+    dataUrl: "Build/20240215.data.unityweb",
+    frameworkUrl: "Build/20240215.framework.js.unityweb",
+    codeUrl: "Build/20240215.wasm.unityweb",
   });
 
   return (
     <>
-      <h1>Unity WebGL</h1>
-      <Unity unityProvider={unityProvider} />
+      <h1
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          textAlign: "center",
+          color: "black",
+          zIndex: 100,
+          opacity: 0.5,
+        }}
+      >
+        Test Unity WebGL
+      </h1>
+      <Unity
+        unityProvider={unityProvider}
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+        }}
+      />
     </>
   );
 }
