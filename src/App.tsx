@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
   const { unityProvider, isLoaded } = useUnityContext({
-    loaderUrl: "Build/20240215_ProjectM.loader.js",
-    dataUrl: "Build/20240215_ProjectM.data.unityweb",
-    frameworkUrl: "Build/20240215_ProjectM.framework.js.unityweb",
-    codeUrl: "Build/20240215_ProjectM.wasm.unityweb",
+    loaderUrl: "Build/Build.loader.js",
+    dataUrl: "Build/Build.data.unityweb",
+    frameworkUrl: "Build/Build.framework.js.unityweb",
+    codeUrl: "Build/Build.wasm.unityweb",
   });
 
   useEffect(() => {
