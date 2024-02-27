@@ -5,9 +5,9 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function App() {
   const { unityProvider, isLoaded } = useUnityContext({
     loaderUrl: "Build/test_build.loader.js",
-    dataUrl: "Build/test_build.data.gz",
-    frameworkUrl: "Build/test_build.framework.js.gz",
-    codeUrl: "Build/test_build.wasm.gz",
+    dataUrl: "Build/test_build.data",
+    frameworkUrl: "Build/test_build.framework.js",
+    codeUrl: "Build/test_build.wasm",
   });
 
   useEffect(() => {
